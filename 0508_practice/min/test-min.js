@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()>20?$("nav").fadeIn():$("nav").fadeOut()}),$("a[href='#top']").click(function(){return $("html, body").animate({scrollTop:0},"slow"),!1});

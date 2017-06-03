@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	display: table;
+	width:100%;
+	min-height: 800px;
+	min-height: 100vh;
+	height: 100%;
+	background: #fff url(https://d5gyvv73sl4au.cloudfront.net/assets/images/what/what-hero-8ef0d69a98.jpg) no-repeat center top;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.container::before{
+	position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #4a4a4a;
+    content: "";
+    opacity: .4;
+}
+.centent{
+	width: 100%;
+}
+a.arrow-down{
+	position:absolute;
+	left:50%;
+	margin-left:-12px;
+	bottom: 20px;
+	cursor: pointer;
+	animation:cta-arrow-bounce .4s infinite alternate ease-in-out;
+	// infinite(無限輪播) alternate(交替) ease-in-out;
+}
+
+@keyframes cta-arrow-bounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    to {
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px)
+    }
+}
+
+/* go to top */
+.GoToTop{
+  position: fixed;
+  bottom:40px;
+  right:40px;
+  z-index:999;
+  display:none;
+}
+a.GoTopBtn{
+  padding:20px;
+  color: #fff;
+  background:#000; 
+}
+
+/* no */
+nav.scrolltop {
+  background-color: black !important;
+  color:orange;
+  text-align: center;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 50px;
+  height: 50px;
+  position: fixed;
+  z-index:9999;
+  opacity:.7;
+}
+nav.scrolltop ul{
+  margin:0;
+  padding-right: 100px;
+}
+nav.scrolltop ul li{
+ float: right;
+ padding:0 5px;
+ list-style-type:none;
+  line-height: 50px;
+  vertical-align: middle;
+}
+nav.scrolltop:hover {
+  background:#fff;
+  opacity: 1.0;
+}
+
+
